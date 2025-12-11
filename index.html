@@ -1,17 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>South Indian Restaurant</title>
-<link rel="stylesheet" href="style.css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>My Links</title>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: "Poppins", sans-serif;
+        background: linear-gradient(135deg, #4b6cb7, #182848);
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .container {
+        width: 90%;
+        max-width: 450px;
+        text-align: center;
+        background: rgba(255, 255, 255, 0.1);
+        padding: 30px;
+        border-radius: 20px;
+        backdrop-filter: blur(10px);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    }
+
+    .logo {
+        width: 120px;
+        height: auto;
+        margin-bottom: 25px;
+    }
+
+    a.link-btn {
+        display: block;
+        width: 100%;
+        padding: 15px;
+        margin: 12px 0;
+        font-size: 18px;
+        font-weight: 600;
+        color: white;
+        text-decoration: none;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 12px;
+        transition: 0.3s;
+    }
+
+    a.link-btn:hover {
+        background: rgba(255, 255, 255, 0.35);
+        transform: translateY(-3px);
+    }
+</style>
 </head>
+
 <body>
-<div class="container">
-    <img src="logo.png" class="logo" alt="Restaurant Logo">
-    <a href="menu.pdf" class="btn">📄 Carta | Menu </a>
-    <a href="https://maps.app.goo.gl/QLswLohfMgESD2iE9?g_st=aw" class="btn">⭐ Rate Us</a>
-    <a href="https://maps.app.goo.gl/QLswLohfMgESD2iE9?g_st=aw" class="btn">📝 Feedback</a>
-</div>
+    <div class="container">
+        <img src="logo.png" alt="Logo" class="logo">
+
+        <a href="menu.pdf" class="link-btn" download>Menu | Carta</a>
+
+        <a href="https://maps.app.goo.gl/QLswLohfMgESD2iE9?g_st=aw" class="link-btn" target="_blank">
+            Rate Us
+        </a>
+
+        <a href="https://maps.app.goo.gl/QLswLohfMgESD2iE9?g_st=aw" class="link-btn" target="_blank">
+            Feedback | Su Opinión
+        </a>
+    </div>
 </body>
 </html>
